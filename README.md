@@ -29,3 +29,10 @@ npm install recoil
 ```
 npm install axios
 ```
+
+### 라이브러리 설치
+
+```
+ npm i @emotion/styled @emotion/react react-icons uui
+d
+```

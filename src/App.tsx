@@ -1,11 +1,17 @@
 import React from "react";
-import { useRecoilValue } from "recoil";
-import todoItemQuery from "./store/todoItemQuery";
+import { RecoilRoot } from "recoil";
+import Calendar from "./features/Calendar";
+import TodoFormModal from "./features/TodoFormModal";
+import TodoStatisticsModal from "./features/TodoSatisticsModal";
 
 function App() {
-  const data = useRecoilValue(todoItemQuery);
-  console.log(data);
-  return <div>{data.title}</div>;
+  return (
+    <RecoilRoot>
+      <Calendar />
+      <TodoFormModal />
+      <TodoStatisticsModal />
+    </RecoilRoot>
+  );
 }
 
 export default App;
